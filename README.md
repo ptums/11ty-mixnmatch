@@ -6,6 +6,11 @@ This repository is a companion to a blog post where I cover starting with an 11t
 
 If you're following along with the blog post, you'll want to clone the repository and checkout the `start` branch.
 
+```sh
+git clone git@github.com:brob/11ty-mixnmatch.git
+g checkout start 
+```
+
 Then run the following commands:
 
 ```sh
