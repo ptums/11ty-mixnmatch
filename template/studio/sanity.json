@@ -1,11 +1,11 @@
 {
   "root": true,
   "project": {
-    "name": "11ty-mixnmatch"
+    "name": "<#< sanity.projectTitle >#>"
   },
   "api": {
     "projectId": "<#< sanity.projectId >#>",
-    "dataset": "<#< sanity.dataset >#>"
+    "dataset": "production"
   },
   "plugins": [
     "@sanity/base",
