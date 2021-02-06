@@ -4,8 +4,8 @@
     "name": "11ty-mixnmatch"
   },
   "api": {
-    "projectId": "okkxvpxa",
-    "dataset": "production"
+    "projectId": "<#< sanity.projectId >#>",
+    "dataset": "<#< sanity.dataset >#>"
   },
   "plugins": [
     "@sanity/base",

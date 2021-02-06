@@ -1,7 +1,7 @@
 {
   "version": 2,
   "title": "11ty Mix and Match",
-  "description": "A project that let's you mix and match Markdown blog posts with Sanity-hosted blog posts in 11ty.",
+  "description": "A project that lets you mix and match Markdown blog posts with Sanity-hosted blog posts in 11ty.",
   "technologies": [{
     "id": "netlify",
     "name": "Netlify",
