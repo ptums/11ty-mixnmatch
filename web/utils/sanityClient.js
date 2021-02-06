@@ -1,6 +1,6 @@
 const sanityClient = require('@sanity/client')
 module.exports = sanityClient({
-    projectId: 'myf3wh95',
-    dataset: 'production',
+    projectId: "<#< sanity.projectId >#>",
+    dataset: "<#< sanity.dataset >#>",
     useCdn: true // `false` if you want to ensure fresh data
 })
