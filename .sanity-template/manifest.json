@@ -1,0 +1,50 @@
+{
+  "version": 2,
+  "title": "11ty Mix and Match",
+  "description": "A project that let's you mix and match Markdown blog posts with Sanity-hosted blog posts in 11ty.",
+  "previewMedia": {
+    "type": "image",
+    "src": ".sanity-template/assets/studio.png",
+    "alt": "Sanity Studio"
+  },
+  "technologies": [{
+    "id": "netlify",
+    "name": "Netlify",
+    "url": "https://www.netlify.com/"
+  }],
+  "deployment": {
+    "provider": "netlify",
+    "sites": [
+      {
+        "id": "studio",
+        "type": "studio",
+        "title": "Sanity Studio",
+        "description": "The Sanity Studio is where you edit and structure your content.",
+        "dir": "./studio",
+        "previewMedia": {
+          "type": "image",
+          "src": ".sanity-template/assets/studio.png",
+          "alt": "A preview image of the Sanity Studio."
+        },
+        "buildSettings": {
+          "base": "studio",
+          "dir": "dist",
+          "cmd": "npm run build && cp netlify.toml dist"
+        }
+      },
+      {
+        "id": "web",
+        "type": "web",
+        "title": "11ty Mix and Match Site",
+        "description": "The 11ty front-end that uses markdown and Sanity blog posts",
+        "dir": "./",
+        "buildSettings": {
+          "base": "./",
+          "dir": "_site",
+          "cmd": "npm run build"
+        }
+
+      }
+    ]
+  }
+}
